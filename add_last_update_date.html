@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado de la Operación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .message {
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Resultado de la Operación</h2>
+
+        <!-- Mensaje de éxito o error -->
+        <div class="message success">
+            Columna 'last_update_date' añadida correctamente a la tabla 'inventory'.
+        </div>
+
+        <!-- En caso de error, el mensaje se vería así -->
+        <!--
+        <div class="message error">
+            Error al agregar columna: [mensaje de error aquí].
+        </div>
+        -->
+
+        <a href="index.html">Volver a la Página Principal</a>
+    </div>
+</body>
+</html>

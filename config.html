@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Base de Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .code {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap; /* Para que el texto largo no se salga del contenedor */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Configuración de Conexión a la Base de Datos</h1>
+        <p>A continuación se muestra un ejemplo de cómo se definen las constantes para la configuración de una conexión a la base de datos en PHP:</p>
+        
+        <h2>Código PHP</h2>
+        <div class="code">
+            <pre>
+define('DB_HOST', 'localhost');
+define('DB_USER', 'su_usuario');
+define('DB_PASS', 'su_contraseña');
+define('DB_NAME', 'inventario');
+            </pre>
+        </div>
+
+        <h2>Explicación</h2>
+        <ul>
+            <li><strong>DB_HOST</strong>: El servidor de base de datos. En este caso, se está usando 'localhost' porque la base de datos está en el mismo servidor que el script PHP.</li>
+            <li><strong>DB_USER</strong>: El nombre de usuario para acceder a la base de datos. Debe ser reemplazado por el usuario real que tenga permisos para conectarse a la base de datos.</li>
+            <li><strong>DB_PASS</strong>: La contraseña asociada con el usuario de la base de datos. Debe ser reemplazada por la contraseña real.</li>
+            <li><strong>DB_NAME</strong>: El nombre de la base de datos a la que se desea conectar.</li>
+        </ul>
+    </div>
+</body>
+</html>
