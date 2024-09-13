@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculación del archivo CSS -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Panel de Control</h1>
+            <a href="logout.php" class="btn logout-btn">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="welcome-section">
+                <h2>Bienvenido al Panel de Control</h2>
+                <p>Selecciona una opción para continuar:</p>
+            </section>
+
+            <section class="options-section">
+                <a href="delete_category.php" class="btn">Eliminar Categoría</a>
+                <a href="add_record.php" class="btn">Añadir Nuevo Registro</a>
+                <a href="view_categories.php" class="btn">Ver Categorías Disponibles</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="logout.php" class="btn logout-btn">Cerrar Sesión</a>
+            <p>&copy; 2023 Panel de Control. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Animaciones y efectos -->
+    <script>
+        // Animación de carga
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.body.classList.add("loaded");
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
